@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 $host = 'localhost'; // Ou l'adresse de ton serveur MySQL
 $dbname = 'tp_authentification';
 $username = 'user_php';
@@ -11,7 +14,12 @@ try {
   $emailForm = $_POST['email'];
   $passwordForm = $_POST['password'];
 
-  //Récupérer les utilisateurs 
+  // Vérifier que l'email est valide
+  if (!filter_var($emailForm, FILTER_VALIDATE_EMAIL)) {
+    echo "Adresse email invalide";
+    exit();
+  }
+
   //Récupérer les utilisateurs 
   $query = "SELECT * FROM users WHERE email = :email";
   $stmt = $pdo->prepare($query);
@@ -21,7 +29,11 @@ try {
   if ($stmt->rowCount() == 1) {
     $monUser = $stmt->fetch(PDO::FETCH_ASSOC);
     if (password_verify($passwordForm, $monUser['password'])) {
-      echo "Connexion réussie ! Bienvenue " . $monUser['name'] . $monUser['surname'];
+      // Stocker les informations de l'utilisateur en session
+      $_SESSION['user'] = $monUser;
+      // Redirection vers la page du compte
+      header("Location: profilUsers.php");
+      exit();
     } else {
       echo "Mot de passe incorrect";
     }

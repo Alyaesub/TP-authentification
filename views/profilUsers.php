@@ -18,6 +18,17 @@
   <title>Mon profile</title>
 </head>
 
+<?php
+session_start();
+// Si l'utilisateur n'est pas connecté, on le redirige vers la page de connexion
+if (!isset($_SESSION['user'])) {
+  header('Location: login.php');
+  exit();
+}
+// Sinon, affichez le profil
+?>
+
+
 <body>
   <div class="d-flex" id="wrapper">
     <!-- Sidebar-->
@@ -47,7 +58,7 @@
                   <a class="dropdown-item" href="login.php">Ce connecter</a>
                   <a class="dropdown-item" href="register.php">Créer un compte</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#!">Ce déconnecter</a>
+                  <a class="dropdown-item" href="../controllers/logout.php">Ce déconnecter</a>
                 </div>
               </li>
             </ul>
@@ -56,17 +67,8 @@
       </nav>
       <!-- Page content-->
       <div class="container-fluid">
-        <h1>Connectez vous pour avoir acces a votre profile</h1>
-        <form class="formulaire" action="/loginPost.php" method="POST">
-
-          <label for="email">Adresse email :</label>
-          <input type="email" name="email" required /> <br><br>
-
-          <label for="password">Mot de passe :</label>
-          <input type="password" name="password" required /> <br><br>
-
-          <input type="submit" value="Se connecter" />
-        </form>
+        <h1>Bienvenue sur votre profile</h1>
+        <?php echo "Bienvenue " . $_SESSION['user']['name'] . " " . $_SESSION['user']['surname']; ?>
       </div>
     </div>
   </div>

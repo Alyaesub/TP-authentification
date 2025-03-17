@@ -27,7 +27,7 @@
       <div class="list-group list-group-flush">
         <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../index.php">Dashboard</a>
         <a class="list-group-item list-group-item-action list-group-item-light p-3" href="profilUsers.php">Mon compte</a>
-        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="views/login.php">Ce connecter</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="login.php">Ce connecter</a>
         <a class="list-group-item list-group-item-action list-group-item-light p-3" href="register.php">Créer un compte</a>
       </div>
     </div>
@@ -58,7 +58,7 @@
       <!-- Page content-->
       <div class="container-fluid">
         <h1>Inscription</h1>
-        <form class="formulaire" action="registerPost.php" method="POST">
+        <form class="formulaire" action="../models/registerPost.php" method="POST">
           <label for="name">Nom :</label>
           <input type="text" name="name"><br><br>
 
