@@ -6,22 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
+  <link rel="icon" href="data:,">
   <title>login</title>
-  <!-- Favicon-->
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="../css/styles.css" rel="stylesheet" />
   <!-- Bootstrap core JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Core theme JS-->
-  <script src="js/scripts.js" defer></script>
+  <script src="../js/scripts.js" defer></script>
 </head>
 
 <?php
 session_start();
 // Si l'utilisateur est déjà connecté, rediriger vers le profil
 if (isset($_SESSION['user'])) {
-  header('Location: profilUsers.php');
+  header('Location: /views/profilUsers.php');
   exit();
 }
 ?>
@@ -78,6 +77,9 @@ if (isset($_SESSION['user'])) {
       </div>
     </div>
   </div>
+  <footer>
+    <p>@made with enjoy by P.R 2025</p>
+  </footer>
 </body>
 
 </html>

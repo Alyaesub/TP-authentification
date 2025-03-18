@@ -104,6 +104,43 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/*CSS index*/
+
+.index-presentation {
+  text-align: center;
+}
+
+/*userprofilcss*/
+
+section {
+  background-color: #fff;
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-bottom: 1em;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #333;
+  color: #fff;
+}
+
 /*css foruluaire*/
 
 .formulaire {

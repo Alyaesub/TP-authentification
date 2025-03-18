@@ -6,14 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <!-- Favicon-->
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="icon" href="data:,">
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="../css/styles.css" rel="stylesheet" />
   <!-- Bootstrap core JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Core theme JS-->
-  <script src="js/scripts.js" defer></script>
+  <script src="../js/scripts.js" defer></script>
 
   <title>Mon profile</title>
 </head>
@@ -69,9 +68,36 @@ if (!isset($_SESSION['user'])) {
       <div class="container-fluid">
         <h1>Bienvenue sur votre profile</h1>
         <?php echo "Bienvenue " . $_SESSION['user']['name'] . " " . $_SESSION['user']['surname']; ?>
+        <section class="messages-recus">
+          <h2>Messages Reçus</h2>
+          <ul>
+            <li>Message reçu 1</li>
+            <li>Message reçu 2</li>
+            <li>Message reçu 3</li>
+          </ul>
+        </section>
+        <section class="messages-envoyes">
+          <h2>Messages Envoyés</h2>
+          <ul>
+            <li>Message envoyé 1</li>
+            <li>Message envoyé 2</li>
+            <li>Message envoyé 3</li>
+          </ul>
+        </section>
+        <section class="contacts">
+          <h2>Contacts</h2>
+          <ul>
+            <li>Contact 1</li>
+            <li>Contact 2</li>
+            <li>Contact 3</li>
+          </ul>
+        </section>
       </div>
     </div>
   </div>
+  <footer>
+    <p>@made with enjoy by P.R 2025</p>
+  </footer>
 </body>
 
 </html>

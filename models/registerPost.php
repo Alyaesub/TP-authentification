@@ -39,6 +39,9 @@ try {
   $stmt->bindParam(':password', $hashedPassword);
   $stmt->execute();
 
+  // Redirection vers le profil de l'utilisateur
+  header("Location: /views/profilUsers.php");
+  exit();
   echo "inscription réussi";
 } catch (PDOException $e) {
   echo "Erreur lors de l'inscription  : " . $e->getMessage();

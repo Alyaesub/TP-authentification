@@ -32,7 +32,7 @@ try {
       // Stocker les informations de l'utilisateur en session
       $_SESSION['user'] = $monUser;
       // Redirection vers la page du compte
-      header("Location: profilUsers.php");
+      header("Location: /views/profilUsers.php");
       exit();
     } else {
       echo "Mot de passe incorrect";

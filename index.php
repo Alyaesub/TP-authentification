@@ -7,8 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Ma messagerie</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" href="data:,">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <!-- Bootstrap core JS-->
@@ -56,10 +55,17 @@
             <!-- Page content-->
             <div class="container-fluid">
                 <h1 class="mt-4">Bienvenue sur votre messagerie</h1>
-                <p>connectez-vous a votre compte ou créer en un pour commencer</p>
+                <section class="index-presentation">
+                    <p>connectez-vous a votre compte ou créer en un pour commencer</p><br>
+                    <p> Découvrez notre nouvelle messagerie </p>
+                </section>
+
             </div>
         </div>
     </div>
+    <footer>
+        <p>@made with enjoy by P.R 2025</p>
+    </footer>
 </body>
 
 </html>
