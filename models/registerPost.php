@@ -1,9 +1,9 @@
 <?php
 $host = 'localhost'; // Ou l'adresse de ton serveur MySQL
 $dbname = 'tp_authentification';
-$username = 'user_php';
-$password = '3f7zhhRn4NH69R';
-$port = 3306;
+$username = 'roo';
+$password = 'root';
+$port = 8889;
 
 try {
   $pdo = new PDO("mysql:host=$host;port=$port;dbname=$dbname", $username, $password);

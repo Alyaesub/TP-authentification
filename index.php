@@ -42,7 +42,7 @@
                                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="views\profilUsers.php">Mon compte</a>
-                                    <a class="dropdown-item" href="views\login.php">Ce connecter</a>
+                                    <a class="dropdown-item" href="/views/login.php">Ce connecter</a>
                                     <a class="dropdown-item" href="views\register.php">Créer un compte</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#!">Ce déconnecter</a>
