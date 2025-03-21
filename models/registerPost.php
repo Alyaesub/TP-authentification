@@ -3,7 +3,7 @@ session_start();
 
 $host = 'localhost'; // Ou l'adresse de ton serveur MySQL
 $dbname = 'tp_authentification';
-$username = 'roo';
+$username = 'root';
 $password = 'root';
 $port = 8889;
 

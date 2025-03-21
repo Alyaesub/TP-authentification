@@ -9,9 +9,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !isset($_POST['email']) || !isset($
 
 $host = 'localhost';
 $dbname = 'tp_authentification';
-$username = 'user_php';
-$password = '3f7zhhRn4NH69R';
-$port = 3306;
+$username = 'root';
+$password = 'root';
+$port = 8889;
 
 $response = [];
 
